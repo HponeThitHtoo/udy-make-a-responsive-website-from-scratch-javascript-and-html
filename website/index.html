@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKHHgmwX80myUERRms3ilg4w_tKQHVSmg&callback=myMap"
+      async defer></script>
+</head>
+<body>
+  <section id="googleMaps">
+    <!-- <div id="test"></div> -->
+    <nav id="navbar" class="topnav">
+      <div id="my_restaurant">My Restaurant</div>
+      <a href="" class="navbar_text" id="home">Home</a>
+      <a href="" class="navbar_text">About Us</a>
+      <a href="" class="navbar_text">Table Booking</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Indian<i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="">Link 1</a>
+          <a href="">Link 2</a>
+          <a href="">Link 3</a>
+        </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Itallian<i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="">Link 1</a>
+          <a href="">Link 2</a>
+          <a href="">Link 3</a>
+        </div>
+      </div>
+      <a href="" class="navbar_text_right"><i class="fa fa-bars"></i></a>
+    </nav>
+  </section>
+
+  <script>
+    function myMap() {
+      var mapProp = {
+        center: new google.maps.LatLng(51.508742, -0.120850),
+        zoom: 5,
+      };
+      var map = new google.maps.Map(document.getElementById('googleMaps'), mapProp);
+    }
+  </script>
+</body>
+</html>

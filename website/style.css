@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: auto;
+}
+
+#googleMaps, #test {
+  height: 400px;
+  padding-top: 10px;
+  width: auto;
+  position: relative;
+}
+
+#navbar {
+  background: #ededed;
+  border-radius: 5px;
+  width: 1100px;
+  position: absolute;
+  margin-left: 200px;
+  top: 10px;
+}
+
+#my_restaurant {
+  color: #565656;
+  cursor: pointer;
+  float: left;
+  font-size: 20px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-top: 15px;
+}
+
+.navbar_text {
+  cursor: pointer;
+  float: left;
+  font-size: 16px;
+  padding: 18px 20px;
+}
+
+.dropbtn{
+  cursor: pointer;
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown {
+  background-color: inherit;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: inherit;
+  padding: 16px 20px;
+}
+
+.dropdown-content{
+  display: none;
+}

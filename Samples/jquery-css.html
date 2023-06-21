@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <style>
+    #a {
+      height: 450px;
+      width: 450px;
+      background-color: blue;
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+      $('#b').click(function() {
+        $('#a').css('background-color', 'red');
+      });
+    });
+  </script>
+</head>
+<body>
+  <div id="a"></div>
+  <button id="b">Press Me</button>
+</body>
+</html>
